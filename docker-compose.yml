@@ -1,0 +1,15 @@
+version: '3.8'
+services:
+  srev-db:
+    image:
+      postgres:13
+    ports:
+      - 5434:5432
+    environment:
+      POSTGRES_USER: regress
+      POSTGRES_PASSWORD: 123
+      POSTGRES_DB: nest_regress
+    networks:
+      - paidnocodehotel
+networks:
+  paidnocodehotel:
