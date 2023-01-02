@@ -61,7 +61,7 @@ export class AuthService {
         'Password incorrect',
       );
     }
-
+    delete user.hash;
     return user;
   }
 }

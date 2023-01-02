@@ -6,6 +6,9 @@
   "private": true,
   "license": "UNLICENSED",
   "scripts": {
+    "db:dev:rm": "docker-compose rm srev-db -s -f -v",
+    "db:dev:up": "docker-compose up srev-db -d",
+    "db:dev:restart": "npm run db:dev:rm && npm run db:dev:up",
     "prebuild": "rimraf dist",
     "build": "nest build",
     "format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\"",
