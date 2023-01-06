@@ -6,8 +6,6 @@ import {
 import { AuthService } from './auth.service';
 import { AuthDto } from './dto';
 
-// type AuthService = any;
-
 @Controller('auth')
 export class AuthController {
   constructor(private authService: AuthService) {}
