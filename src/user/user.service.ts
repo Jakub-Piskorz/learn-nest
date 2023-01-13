@@ -12,8 +12,6 @@ export class UserService {
     userId: number,
     dto: EditUserDto,
   ) {
-    console.info('userId', userId);
-    console.info('dto', dto);
     if (!Object.keys(dto).length)
       throw new HttpException(
         "New user data hasn't been provided",
